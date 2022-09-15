@@ -1,13 +1,15 @@
 import Chatra from "@chatra/chatra";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import "./componentStyles.css";
 
 const WorkProgress = () => {
   return (
     <Container className="pt-4">
-      <h1 className="workProgressHeading">CDR For Engineer&apos;s Work Process</h1>
+      <h1 className="workProgressHeading">
+        CDR For Engineer&apos;s Work Process
+      </h1>
       <Row>
         <Col xs={6}>
           <div className="mb-md-5 px-md-3 mt-5 mt-md-0">
@@ -37,10 +39,13 @@ const WorkProgress = () => {
             }}
             // onClick={() => Chatra("openChat", true)}
           >
-             <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-             <strong>
-              Get Started <ArrowForwardRoundedIcon/>
-            </strong></a></div>
+            <div data-id="a454874ff4" class="livechat_button">
+              <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                <strong>
+                  Get Started <ArrowForwardRoundedIcon />
+                </strong>
+              </a>
+            </div>
             {/* <strong>
               Get Started <ArrowForwardRoundedIcon/>
             </strong> */}
@@ -67,10 +72,13 @@ const WorkProgress = () => {
             }}
             // onClick={() => Chatra("openChat", true)}
           >
-              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-             <strong>
-              Get Started <ArrowForwardRoundedIcon/>
-            </strong></a></div>
+            <div data-id="a454874ff4" class="livechat_button">
+              <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                <strong>
+                  Get Started <ArrowForwardRoundedIcon />
+                </strong>
+              </a>
+            </div>
             {/* <strong>
               Get Started <ArrowForwardRoundedIcon/>
             </strong> */}
@@ -117,10 +125,13 @@ const WorkProgress = () => {
             }}
             // onClick={() => Chatra("openChat", true)}
           >
-              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-             <strong>
-              Get Started <ArrowForwardRoundedIcon/>
-            </strong></a></div>
+            <div data-id="a454874ff4" class="livechat_button">
+              <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                <strong>
+                  Get Started <ArrowForwardRoundedIcon />
+                </strong>
+              </a>
+            </div>
             {/* <strong>
               Get Started <ArrowForwardRoundedIcon/>
             </strong> */}
@@ -145,10 +156,13 @@ const WorkProgress = () => {
             }}
             // onClick={() => Chatra("openChat", true)}
           >
-              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-             <strong>
-              Get Started <ArrowForwardRoundedIcon/>
-            </strong></a></div>
+            <div data-id="a454874ff4" class="livechat_button">
+              <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                <strong>
+                  Get Started <ArrowForwardRoundedIcon />
+                </strong>
+              </a>
+            </div>
             {/* <strong>
               Get Started <ArrowForwardRoundedIcon/>
             </strong> */}

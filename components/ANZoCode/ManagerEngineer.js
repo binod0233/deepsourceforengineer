@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
 import TextParagraph from "../TextParagraph";
-import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
+import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 
 const ManagerEngineer = ({
   title,
@@ -152,7 +152,7 @@ const ManagerEngineer = ({
           <Row key={index}>
             <Col md={1}></Col>
             <Col md={11} className="d-flex">
-              <CheckCircleRoundedIcon className="fa-regular fa-circle-check mx-2 text-danger mt-2"/>
+              <CheckCircleRoundedIcon className="fa-regular fa-circle-check mx-2 text-danger mt-2" />
               <TextParagraph content={t} family="Arial" />
             </Col>
           </Row>

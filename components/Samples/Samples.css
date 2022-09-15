@@ -2,19 +2,19 @@ input::-webkit-input-placeholder {
   padding-left: 30px;
   font-size: 14px;
 }
-.viewSampleContainer:hover{
-  background: #FA2545 !important;
+.viewSampleContainer:hover {
+  background: #fa2545 !important;
 }
 
-.viewSampleContainer:hover .viewSampleLink{
-  color:white !important
+.viewSampleContainer:hover .viewSampleLink {
+  color: white !important;
 }
-.sampleCodeContainer:hover{
-  background: #0EAF00 !important;
-  color:white !important
+.sampleCodeContainer:hover {
+  background: #0eaf00 !important;
+  color: white !important;
 }
-.whyRelyCards:hover{
-  background: #E77433 !important;
+.whyRelyCards:hover {
+  background: #e77433 !important;
 }
 
 @media screen and (max-width: 540px) {

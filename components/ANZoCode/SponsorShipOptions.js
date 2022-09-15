@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import CheckIcon from '@mui/icons-material/Check';
-import CloseIcon from '@mui/icons-material/Close';
-
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
 
 const SponsorShipOptions = ({
   NTParagraphs,
@@ -267,9 +266,9 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {NTTick1 ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
@@ -302,17 +301,18 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {NTTick2 ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
               <Col xs={5} className="mt-3 "></Col>
             </Row>
           )}
-          {NTParagraphs.map((n,i) => (
-            <Row key={i}
+          {NTParagraphs.map((n, i) => (
+            <Row
+              key={i}
               className="mobileText"
               style={{ border: "1.5px solid #8D8D8D" }}
             >
@@ -341,15 +341,17 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {n.tick1 ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-                {n.NTParagraphs1?.map((n,i) => (
-                  <p key={i} className="text-md-center mb-md-5 px-0 mx-0">{n}</p>
+                {n.NTParagraphs1?.map((n, i) => (
+                  <p key={i} className="text-md-center mb-md-5 px-0 mx-0">
+                    {n}
+                  </p>
                 ))}
               </Col>
               <Col xs={2} md={1} className="d-flex px-0">
@@ -378,15 +380,17 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {n.tick2 ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-                {n.NTParagraphs2?.map((n,i) => (
-                  <p key={i} className=" text-md-center mb-md-5 px-0 mx-0">{n}</p>
+                {n.NTParagraphs2?.map((n, i) => (
+                  <p key={i} className=" text-md-center mb-md-5 px-0 mx-0">
+                    {n}
+                  </p>
                 ))}
               </Col>
             </Row>
@@ -437,9 +441,9 @@ const SponsorShipOptions = ({
                 }}
               >
                 {SATick1 ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
@@ -472,9 +476,9 @@ const SponsorShipOptions = ({
                 }}
               >
                 {SATick2 ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
@@ -508,15 +512,17 @@ const SponsorShipOptions = ({
                 }}
               >
                 {SAParagraphsTick1 ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-              {SAParagraphs1?.map((n,i) => (
-                <p key={i} className="text-md-center mb-md-5">{n}</p>
+              {SAParagraphs1?.map((n, i) => (
+                <p key={i} className="text-md-center mb-md-5">
+                  {n}
+                </p>
               ))}
             </Col>
             <Col xs={2} md={1} className=" d-flex px-0">
@@ -545,15 +551,17 @@ const SponsorShipOptions = ({
                 }}
               >
                 {SAParagraphsTick2 ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-              {SAParagraphs2?.map((n,i) => (
-                <p key={i} className="text-md-center mb-md-5">{n}</p>
+              {SAParagraphs2?.map((n, i) => (
+                <p key={i} className="text-md-center mb-md-5">
+                  {n}
+                </p>
               ))}
             </Col>
           </Row>
@@ -607,7 +615,7 @@ const SponsorShipOptions = ({
                     alignItems: "center",
                   }}
                 >
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 mobileText">
@@ -638,7 +646,7 @@ const SponsorShipOptions = ({
                     alignItems: "center",
                   }}
                 >
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 mobileText">
@@ -646,8 +654,9 @@ const SponsorShipOptions = ({
               </Col>
             </Row>
           )}
-          {VICParagraphs.map((v,i) => (
-            <Row key={i}
+          {VICParagraphs.map((v, i) => (
+            <Row
+              key={i}
               className="mobileText"
               style={{ border: "1.5px solid #8D8D8D" }}
             >
@@ -666,7 +675,6 @@ const SponsorShipOptions = ({
                   VIC
                 </div>
                 <div
-
                   style={{
                     height: "100%",
                     width: "50%",
@@ -677,9 +685,9 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {v.tick1 ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
@@ -687,8 +695,10 @@ const SponsorShipOptions = ({
                 <p className="text-center mb-md-5">
                   <strong>For Graduates in Victoria:</strong>
                 </p>
-                {v.VICParagraphs1?.map((n,i) => (
-                  <p key={i} className="text-md-center mb-md-5">{n}</p>
+                {v.VICParagraphs1?.map((n, i) => (
+                  <p key={i} className="text-md-center mb-md-5">
+                    {n}
+                  </p>
                 ))}
               </Col>
               <Col xs={2} md={1} className="d-flex px-0 ">
@@ -717,9 +727,9 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {v.tick2 ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
@@ -782,7 +792,7 @@ const SponsorShipOptions = ({
                   alignItems: "center",
                 }}
               >
-                <CloseIcon className='text-danger'/>
+                <CloseIcon className="text-danger" />
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 mobileText">
@@ -814,7 +824,7 @@ const SponsorShipOptions = ({
                   color: "red",
                 }}
               >
-                <CloseIcon className='text-success'/>
+                <CloseIcon className="text-success" />
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3  mobileText">
@@ -849,9 +859,9 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {n.WA1tick ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
@@ -889,9 +899,9 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {n.WA2tick ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
@@ -942,9 +952,9 @@ const SponsorShipOptions = ({
                   NSW
                 </strong>{" "}
                 {NSWHeading ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
@@ -984,9 +994,9 @@ const SponsorShipOptions = ({
                   >
                     {" "}
                     {n.tick ? (
-                      <CheckIcon className='text-success'/>
+                      <CheckIcon className="text-success" />
                     ) : (
-                      <CloseIcon className='text-danger'/>
+                      <CloseIcon className="text-danger" />
                     )}
                   </Col>
                   <Col
@@ -1054,7 +1064,7 @@ const SponsorShipOptions = ({
                     color: "red",
                   }}
                 >
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 ">
@@ -1086,7 +1096,7 @@ const SponsorShipOptions = ({
                     color: "red",
                   }}
                 >
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 ">
@@ -1127,9 +1137,9 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {q.QLD1Tick ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
@@ -1167,15 +1177,17 @@ const SponsorShipOptions = ({
                   }}
                 >
                   {q.QLD2Tick ? (
-                    <CheckIcon className='text-success'/>
+                    <CheckIcon className="text-success" />
                   ) : (
-                    <CloseIcon className='text-danger'/>
+                    <CloseIcon className="text-danger" />
                   )}
                 </div>
               </Col>
               <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-                {q.QLDParagraph2?.map((n,i) => (
-                  <p key={i} className="text-md-center mb-md-5">{n}</p>
+                {q.QLDParagraph2?.map((n, i) => (
+                  <p key={i} className="text-md-center mb-md-5">
+                    {n}
+                  </p>
                 ))}
               </Col>
             </Row>
@@ -1229,15 +1241,17 @@ const SponsorShipOptions = ({
                 }}
               >
                 {ACTTick1 ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-              {ACTParagraph1.map((a,i) => (
-                <p key={i} className="text-md-center mb-md-5">{a}</p>
+              {ACTParagraph1.map((a, i) => (
+                <p key={i} className="text-md-center mb-md-5">
+                  {a}
+                </p>
               ))}
             </Col>
             <Col xs={2} md={1} className=" d-flex px-0">
@@ -1267,15 +1281,17 @@ const SponsorShipOptions = ({
                 }}
               >
                 {ACTTick2 ? (
-                  <CheckIcon className='text-success'/>
+                  <CheckIcon className="text-success" />
                 ) : (
-                  <CloseIcon className='text-danger'/>
+                  <CloseIcon className="text-danger" />
                 )}
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
-              {ACTParagraph2?.map((a,i) => (
-                <p key={i} className="text-md-center mb-md-5">{a}</p>
+              {ACTParagraph2?.map((a, i) => (
+                <p key={i} className="text-md-center mb-md-5">
+                  {a}
+                </p>
               ))}
             </Col>
           </Row>
@@ -1327,15 +1343,17 @@ const SponsorShipOptions = ({
                   color: "#0EAF00",
                 }}
               >
-                <CheckIcon className='text-success'/>
+                <CheckIcon className="text-success" />
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
               <p className="text-md-center mb-md-5">
                 <strong>Nomination Criteria:</strong>
               </p>
-              {TASParagraph1.map((a,i) => (
-                <p key={i} className="text-md-center mb-md-5">{a}</p>
+              {TASParagraph1.map((a, i) => (
+                <p key={i} className="text-md-center mb-md-5">
+                  {a}
+                </p>
               ))}
             </Col>
             <Col xs={2} md={1} className="d-flex px-0">
@@ -1364,7 +1382,7 @@ const SponsorShipOptions = ({
                   color: "#0EAF00",
                 }}
               >
-                <CheckIcon className='text-success'/>
+                <CheckIcon className="text-success" />
               </div>
             </Col>
             <Col xs={4} md={5} className="mt-3 sponsorshipTextColumn">
@@ -1372,8 +1390,10 @@ const SponsorShipOptions = ({
                 <strong>Nomination Criteria:</strong>
               </p>
 
-              {TASParagraph2.map((a,i) => (
-                <p key={i} className="text-md-center mb-md-5">{a}</p>
+              {TASParagraph2.map((a, i) => (
+                <p key={i} className="text-md-center mb-md-5">
+                  {a}
+                </p>
               ))}
             </Col>
           </Row>

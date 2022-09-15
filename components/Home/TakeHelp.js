@@ -28,10 +28,12 @@ const TakeHelp = () => {
             border: "none",
           }}
           // onClick={() => Chatra("openChat", true)}
-
         >
-          <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-          Talk to our Experts</a></div>
+          <div data-id="a454874ff4" class="livechat_button">
+            <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+              Talk to our Experts
+            </a>
+          </div>
           {/* Talk to our Experts */}
         </Button>
       </Row>
@@ -143,11 +145,11 @@ const TakeHelp = () => {
                     <strong>Professional Experienced Writers:</strong>
                   </h5>
                   <p className="bestCDRParagraph text-center text-md-start">
-                    Professional writers at CDR For Engineer will help you avoid clichés
-                    and overworked angles and find a fresh way of describing
-                    your information, identify missing material and take the
-                    time to do the job right. Experienced writers will use their
-                    skill and knowledge to your advantage to prepare
+                    Professional writers at CDR For Engineer will help you avoid
+                    clichés and overworked angles and find a fresh way of
+                    describing your information, identify missing material and
+                    take the time to do the job right. Experienced writers will
+                    use their skill and knowledge to your advantage to prepare
                     professional CDR report.
                   </p>
                 </Col>

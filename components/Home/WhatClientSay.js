@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Card, Container, Row } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
-import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
-import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded';
+import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
+import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
+import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuoteRounded";
 import "./componentStyles.css";
 
 const WhatClientSay = () => {
@@ -89,7 +89,7 @@ service again.`,
             }}
             onClick={increaseCounter}
           >
-            <ChevronLeftRoundedIcon/>
+            <ChevronLeftRoundedIcon />
           </Button>
           <Button
             className="position-absolute  whatClientSayLeftButton"
@@ -103,7 +103,7 @@ service again.`,
             }}
             onClick={decreaseCounter}
           >
-            <ChevronRightRoundedIcon/>
+            <ChevronRightRoundedIcon />
           </Button>
 
           <Card
@@ -145,10 +145,8 @@ service again.`,
                 justifyContent: "center",
               }}
             >
-              <p style={{ color: "red",fontWeight:'700' }}>
-                
-                  {sayings[counter].name}
-                
+              <p style={{ color: "red", fontWeight: "700" }}>
+                {sayings[counter].name}
               </p>
               <span> {sayings[counter].country}</span>
               <div
@@ -161,7 +159,7 @@ service again.`,
                   marginBottom: "10px",
                 }}
               >
-                <FormatQuoteRoundedIcon/>
+                <FormatQuoteRoundedIcon />
               </div>
               <span>⭐⭐⭐⭐⭐</span>
               <p

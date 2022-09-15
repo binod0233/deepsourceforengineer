@@ -1,7 +1,7 @@
 import React from "react";
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Socials = () => {
   return (
@@ -14,13 +14,13 @@ const Socials = () => {
           className=" iconContainer"
           style={{}}
         >
-          <FacebookOutlinedIcon/>
+          <FacebookOutlinedIcon />
         </a>
         <div
           className="bg-white mt-3 iconContainer"
           onClick={() => window.open("mailto:info@cdrforengineer.com")}
         >
-                    <EmailOutlinedIcon/>
+          <EmailOutlinedIcon />
         </div>
         <a
           href="https://api.whatsapp.com/send?phone=61482070521"
@@ -28,7 +28,7 @@ const Socials = () => {
           rel="noreferrer"
           className="bg-white mt-3 iconContainer"
         >
-          <WhatsAppIcon style={{color:"#60269e"}}/>
+          <WhatsAppIcon style={{ color: "#60269e" }} />
         </a>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
-import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
+import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import ExpandLessRoundedIcon from "@mui/icons-material/ExpandLessRounded";
 
 const FrequentlyAsked = () => {
   const [firstActive, setFirstActive] = useState(false);
@@ -43,9 +43,9 @@ const FrequentlyAsked = () => {
               </p>
               <span className="frequentlyAskedTitleParagraph">
                 {firstActive ? (
-                  <ExpandLessRoundedIcon/>
+                  <ExpandLessRoundedIcon />
                 ) : (
-                  <ExpandMoreRoundedIcon/>
+                  <ExpandMoreRoundedIcon />
                 )}
               </span>
             </div>
@@ -91,9 +91,9 @@ const FrequentlyAsked = () => {
               </p>
               <span className="frequentlyAskedTitleParagraph">
                 {secondActive ? (
-                  <ExpandLessRoundedIcon/>
+                  <ExpandLessRoundedIcon />
                 ) : (
-                  <ExpandMoreRoundedIcon/>
+                  <ExpandMoreRoundedIcon />
                 )}
               </span>
             </div>
@@ -141,9 +141,9 @@ const FrequentlyAsked = () => {
               </p>
               <span className="frequentlyAskedTitleParagraph">
                 {thirdActive ? (
-                  <ExpandLessRoundedIcon/>
+                  <ExpandLessRoundedIcon />
                 ) : (
-                  <ExpandMoreRoundedIcon/>
+                  <ExpandMoreRoundedIcon />
                 )}
               </span>
             </div>
@@ -191,9 +191,9 @@ const FrequentlyAsked = () => {
               </p>
               <span className="frequentlyAskedTitleParagraph">
                 {fourthActive ? (
-                  <ExpandLessRoundedIcon/>
+                  <ExpandLessRoundedIcon />
                 ) : (
-                  <ExpandMoreRoundedIcon/>
+                  <ExpandMoreRoundedIcon />
                 )}
               </span>
             </div>
@@ -243,9 +243,9 @@ const FrequentlyAsked = () => {
               </p>
               <span className="frequentlyAskedTitleParagraph">
                 {fifthActive ? (
-                  <ExpandLessRoundedIcon/>
+                  <ExpandLessRoundedIcon />
                 ) : (
-                  <ExpandMoreRoundedIcon/>
+                  <ExpandMoreRoundedIcon />
                 )}
               </span>
             </div>
@@ -291,9 +291,9 @@ const FrequentlyAsked = () => {
               </p>
               <span className="frequentlyAskedTitleParagraph">
                 {sixthActive ? (
-                  <ExpandLessRoundedIcon/>
+                  <ExpandLessRoundedIcon />
                 ) : (
-                  <ExpandMoreRoundedIcon/>
+                  <ExpandMoreRoundedIcon />
                 )}
               </span>
             </div>

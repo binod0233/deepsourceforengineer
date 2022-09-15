@@ -54,7 +54,6 @@ const FrequentlyAsked = ({ data }) => {
   const FAQFirstList = data.slice(0, 7);
   const FAQSecondList = data.slice(8, 16);
 
-
   const [listGroup, setListGroup] = useState(FAQFirstList);
   const toggleList = (e) => {
     e.preventDefault();
