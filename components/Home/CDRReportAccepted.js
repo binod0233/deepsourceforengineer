@@ -1,7 +1,7 @@
 import Chatra from "@chatra/chatra";
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 // import { useNavigate } from "react-router-dom";
 // import "./CDRReportAccepted.css";

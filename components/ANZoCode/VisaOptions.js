@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import CheckIcon from '@mui/icons-material/Check';
+import CheckIcon from "@mui/icons-material/Check";
 
 const VisaOptions = () => {
   return (
@@ -111,37 +111,36 @@ const VisaOptions = () => {
 
           <Col xs={1} md={1}>
             {" "}
+            <CheckIcon className="text-success" />
+          </Col>
+          <Col xs={1} md={1}>
+            {" "}
+            <CheckIcon className="text-success" />
+          </Col>
+          <Col xs={1} md={1}>
+            {" "}
+            <CheckIcon className="text-success" />
+          </Col>
+          <Col xs={1} md={1}>
+            {" "}
+            <CheckIcon className="text-success" />
+          </Col>
 
-           <CheckIcon className='text-success'/>
+          <Col xs={1} md={1}>
+            {" "}
+            <CheckIcon className="text-success" />
           </Col>
           <Col xs={1} md={1}>
             {" "}
-           <CheckIcon className='text-success'/>
+            <CheckIcon className="text-success" />
           </Col>
           <Col xs={1} md={1}>
             {" "}
-           <CheckIcon className='text-success'/>
+            <CheckIcon className="text-success" />
           </Col>
           <Col xs={1} md={1}>
             {" "}
-           <CheckIcon className='text-success'/>
-          </Col>
-
-          <Col xs={1} md={1}>
-            {" "}
-           <CheckIcon className='text-success'/>
-          </Col>
-          <Col xs={1} md={1}>
-            {" "}
-           <CheckIcon className='text-success'/>
-          </Col>
-          <Col xs={1} md={1}>
-            {" "}
-           <CheckIcon className='text-success'/>
-          </Col>
-          <Col xs={1} md={1}>
-            {" "}
-           <CheckIcon className='text-success'/>
+            <CheckIcon className="text-success" />
           </Col>
         </Row>
 

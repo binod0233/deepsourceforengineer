@@ -1,29 +1,66 @@
 import React from "react";
 import Head from "next/head";
-import {useRouter} from 'next/router'
+import { useRouter } from "next/router";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const OurAgents = () => {
-  const router = useRouter()
-  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const router = useRouter();
+  const canonicalUrl = (
+    `https://www.cdrforengineer.com` +
+    (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
 
   const agents = [
-    {name:"Sirja Ksetri",image:"/images/ourAgents/1.png",facebookLink:"https://www.facebook.com/profile.php?id=100080927829387",linkedInLink:"",instagramLink:"",phone:"61482072510"},
-  {name:"Binu Mishra",image:"/images/ourAgents/2.png",facebookLink:"https://www.facebook.com/profile.php?id=100082172346949",linkedInLink:"https://www.linkedin.com/in/binu-mishra-103168241/",instagramLink:"https://www.instagram.com/binu.cdrforengineer/",phone:"61482070864"},
-  {name:"Adhira Maharjan",image:"/images/ourAgents/3.png",facebookLink:"https://www.facebook.com/profile.php?id=100080942528620",linkedInLink:"https://www.linkedin.com/in/adhira-mahajan-/",instagramLink:"https://www.instagram.com/cdr_with_adhira/",phone:"61482070521"},
-  {name:"Maira Thapa",image:"/images/ourAgents/4.png",facebookLink:"https://www.facebook.com/profile.php?id=100080996556778",linkedInLink:"https://www.linkedin.com/in/maira-thapa-536259241/",instagramLink:"https://www.instagram.com/cdr_with_maira/",phone:"61482072733"},
-  {name:"Samaira Singh",image:"/images/ourAgents/5.png",facebookLink:"https://www.facebook.com/profile.php?id=100080772975496",linkedInLink:"https://www.linkedin.com/in/samaira-singh-a790b1241/",instagramLink:"https://www.instagram.com/samaira.cdrforengineer/",phone:"61482071295"},];
+    {
+      name: "Sirja Ksetri",
+      image: "/images/ourAgents/1.png",
+      facebookLink: "https://www.facebook.com/profile.php?id=100080927829387",
+      linkedInLink: "",
+      instagramLink: "",
+      phone: "61482072510",
+    },
+    {
+      name: "Binu Mishra",
+      image: "/images/ourAgents/2.png",
+      facebookLink: "https://www.facebook.com/profile.php?id=100082172346949",
+      linkedInLink: "https://www.linkedin.com/in/binu-mishra-103168241/",
+      instagramLink: "https://www.instagram.com/binu.cdrforengineer/",
+      phone: "61482070864",
+    },
+    {
+      name: "Adhira Maharjan",
+      image: "/images/ourAgents/3.png",
+      facebookLink: "https://www.facebook.com/profile.php?id=100080942528620",
+      linkedInLink: "https://www.linkedin.com/in/adhira-mahajan-/",
+      instagramLink: "https://www.instagram.com/cdr_with_adhira/",
+      phone: "61482070521",
+    },
+    {
+      name: "Maira Thapa",
+      image: "/images/ourAgents/4.png",
+      facebookLink: "https://www.facebook.com/profile.php?id=100080996556778",
+      linkedInLink: "https://www.linkedin.com/in/maira-thapa-536259241/",
+      instagramLink: "https://www.instagram.com/cdr_with_maira/",
+      phone: "61482072733",
+    },
+    {
+      name: "Samaira Singh",
+      image: "/images/ourAgents/5.png",
+      facebookLink: "https://www.facebook.com/profile.php?id=100080772975496",
+      linkedInLink: "https://www.linkedin.com/in/samaira-singh-a790b1241/",
+      instagramLink: "https://www.instagram.com/samaira.cdrforengineer/",
+      phone: "61482071295",
+    },
+  ];
   return (
     <div>
-      
-       <Head>
+      <Head>
         <title>Meet Our Agents | CDR For Engineer</title>
         <meta name="description" content="Meet Our Agents | CDR For Engineer" />
         <link rel="canonical" href={canonicalUrl} />
-
       </Head>
       {/* <div className='d-flex flex-column justify-content-center align-items-center'>
         <h1 style={{fontFamily:"Arial",fontSize:"34px",textAlign:'center', fontWeight:"700"}}>OOPS THIS PAGE IS </h1>
@@ -49,7 +86,8 @@ const OurAgents = () => {
                 Meet Our Agents{" "}
               </h1>
               <p className="text-center text-md-start my-4">
-                CDR For Engineer Writer Australia &gt;<strong> Meet Our Agents</strong>
+                CDR For Engineer Writer Australia &gt;
+                <strong> Meet Our Agents</strong>
               </p>
             </Col>
 
@@ -83,7 +121,7 @@ const OurAgents = () => {
                     <Col
                       style={{
                         fontFamily: "Century Gothic",
-                        textAlign:'center',
+                        textAlign: "center",
                         fontSize: "22px",
                         color: "#370C64",
                         fontWeight: "600",
@@ -91,12 +129,12 @@ const OurAgents = () => {
                     >
                       {a.name}
                     </Col>
-                    </Row>
-                    <Row>
+                  </Row>
+                  <Row>
                     <Col
                       style={{
                         fontFamily: "Arial",
-                        textAlign:'center',
+                        textAlign: "center",
                         fontSize: "18px",
                         color: "#5A5757",
                         fontWeight: "400",
@@ -120,8 +158,7 @@ const OurAgents = () => {
                         }}
                       >
                         <a href={a.facebookLink}>
-                        <FacebookRoundedIcon/>
-
+                          <FacebookRoundedIcon />
                         </a>
                       </div>
                       <div
@@ -136,9 +173,8 @@ const OurAgents = () => {
                           borderRadius: "100%",
                         }}
                       >
-                                                <a href={a.linkedInLink}>
-
-                        <LinkedInIcon/>
+                        <a href={a.linkedInLink}>
+                          <LinkedInIcon />
                         </a>
                       </div>
                       <div
@@ -153,12 +189,10 @@ const OurAgents = () => {
                           borderRadius: "100%",
                         }}
                       >
-                                                <a href={a.instagramLink}>
-
-                        <InstagramIcon/>
+                        <a href={a.instagramLink}>
+                          <InstagramIcon />
                         </a>
                       </div>
-                     
                     </div>
                   </Row>
                 </div>
@@ -175,12 +209,17 @@ const OurAgents = () => {
                     }}
                   >
                     <a
-            style={{ textDecoration: "none", color: "white" }}
-            href={`https://api.whatsapp.com/send?phone=${a.phone}`}
-
-          ><> <WhatsAppIcon style={{fontSize:'20px',marginBottom:'3px'}}/>
-          Talk with {a.name}</></a>
-                  
+                      style={{ textDecoration: "none", color: "white" }}
+                      href={`https://api.whatsapp.com/send?phone=${a.phone}`}
+                    >
+                      <>
+                        {" "}
+                        <WhatsAppIcon
+                          style={{ fontSize: "20px", marginBottom: "3px" }}
+                        />
+                        Talk with {a.name}
+                      </>
+                    </a>
                   </Button>
                 </Row>
               </Col>

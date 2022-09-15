@@ -53,9 +53,9 @@ const ProfessionalServices = () => {
           padding: "0 20px",
         }}
       >
-        CDR For Engineer is one of Australia&apos;s best CDR writing service providers.
-        To get help, contact us, and our experienced CDR writers would be
-        pleased to help you at any time.
+        CDR For Engineer is one of Australia&apos;s best CDR writing service
+        providers. To get help, contact us, and our experienced CDR writers
+        would be pleased to help you at any time.
       </p>
 
       <p

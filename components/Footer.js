@@ -1,9 +1,9 @@
 import { Col, Row } from "react-bootstrap";
-import Link from 'next/link'
-import styles from '../styles/Footer.module.css'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import Link from "next/link";
+import styles from "../styles/Footer.module.css";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
           style={{ fontFamily: "Century Gothic", fontWeight: "400" }}
         >
           <img
-          className={styles.footerImage}
+            className={styles.footerImage}
             src="/images/footerLogo.png"
             alt="Logo of CDR For Engineer"
             style={{ height: "100px", marginLeft: "-50px", marginTop: "-20px" }}
@@ -33,7 +33,6 @@ const Footer = () => {
           <a
             style={{ textDecoration: "none", color: "white" }}
             href="https://api.whatsapp.com/send?phone=61482070521"
-
           >
             +61 482 070 521
           </a>
@@ -45,32 +44,31 @@ const Footer = () => {
             style={{ fontSize: "20px" }}
           >
             <a
-            className='m-1'
+              className="m-1"
               href="https://www.facebook.com/cdrforengineer001"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none", color: "white" }}
             >
-            <FacebookIcon/>
+              <FacebookIcon />
             </a>
             <a
-              className='m-1'
+              className="m-1"
               href=" https://www.instagram.com/cdrforengineer/"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none", color: "white" }}
             >
-              <InstagramIcon/>
+              <InstagramIcon />
             </a>
             <a
-              className='m-1'
+              className="m-1"
               href="https://twitter.com/"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none", color: "white" }}
             >
-              <TwitterIcon/>
-             
+              <TwitterIcon />
             </a>
           </div>
         </Col>
@@ -124,7 +122,10 @@ const Footer = () => {
             CDR Reviewing Service
           </Link>
           <br />
-          <Link className={styles.footerServices} href="/services/cpd-writing-australia">
+          <Link
+            className={styles.footerServices}
+            href="/services/cpd-writing-australia"
+          >
             CPD Writing Service
           </Link>
           <br />
@@ -174,7 +175,7 @@ const Footer = () => {
           </Link>
 
           <br />
-          <Link className={styles.footerServices} href="/refund-policy" >
+          <Link className={styles.footerServices} href="/refund-policy">
             Refund Policy
           </Link>
 

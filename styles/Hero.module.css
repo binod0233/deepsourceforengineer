@@ -7,7 +7,7 @@
   ) !important;
   min-height: 40rem;
   overflow: hidden;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .formSubmitButton {
   background-color: #fa2545;
@@ -18,7 +18,7 @@
   border-radius: 20px;
 }
 .inputField {
-  border: none; 
+  border: none;
   background-color: #f4f4f4;
   border-radius: 5px;
 }
@@ -30,8 +30,8 @@
   .formContainer {
     margin-bottom: 10px;
   }
-  .formContainerDiv{
-    width:90% !important;
+  .formContainerDiv {
+    width: 90% !important;
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Router from 'next/router'
+import Router from "next/router";
 
 const SampleCard = ({ image, code, field, link }) => {
   return (
@@ -64,12 +64,14 @@ const SampleCard = ({ image, code, field, link }) => {
             cursor: "pointer",
           }}
         >
-          
-            <div onClick={()=>{ Router.push(`${link}`)}} style={{color:"black"}}>
-            View Sample 
-            </div>
-          
-          
+          <div
+            onClick={() => {
+              Router.push(`${link}`);
+            }}
+            style={{ color: "black" }}
+          >
+            View Sample
+          </div>
         </div>
       </div>
     </div>

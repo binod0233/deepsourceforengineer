@@ -1,7 +1,15 @@
 import { useEffect } from "react";
-import { Navbar, Nav, NavDropdown, Button, Container,Row,Col } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Button,
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 // import { useNavigate } from "react-router-dom";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const Header = ({ scrollToTop }) => {
   const router = useRouter();
@@ -266,7 +274,7 @@ const Header = ({ scrollToTop }) => {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
-                  href="/services/cpd-writing-australia" 
+                  href="/services/cpd-writing-australia"
                   style={{ color: "white", background: "#60269e" }}
                 >
                   CPD Writing
@@ -304,8 +312,6 @@ const Header = ({ scrollToTop }) => {
                   CDR Reviewing
                 </NavDropdown.Item>
 
-              
-
                 <NavDropdown.Divider />
 
                 <NavDropdown.Item
@@ -315,7 +321,6 @@ const Header = ({ scrollToTop }) => {
                   CV/Resume Writing
                 </NavDropdown.Item>
               </NavDropdown>
-
 
               <div
                 className="relative tooltip1"
@@ -617,11 +622,9 @@ const Header = ({ scrollToTop }) => {
               <Button
                 className="px-4"
                 style={{ background: "#FA2545" }}
-                onClick={() =>
-                  
-                  {
-                    // navigate(`/our-agents`)
-                router.push('/meet-our-advisors')
+                onClick={() => {
+                  // navigate(`/our-agents`)
+                  router.push("/meet-our-advisors");
                 }}
               >
                 Meet the Experts

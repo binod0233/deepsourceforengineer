@@ -80,8 +80,7 @@ const Blogs = ({ rdata }) => {
     );
   }
 
-  const handleTitle = (values) => {
-  };
+  const handleTitle = (values) => {};
 
   return (
     <div>
