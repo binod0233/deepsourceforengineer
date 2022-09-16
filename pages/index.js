@@ -10,11 +10,6 @@ import Seo from "../components/Seo";
 import parse from "html-react-parser";
 
 export default function Home({ landingRes }) {
-  const router = useRouter();
-  const canonicalUrl = (
-    `https://www.cdrforengineer.com` +
-    (router.asPath === "/" ? "" : router.asPath)
-  ).split("?")[0];
   const { hero, seo } = landingRes;
 
   return (
