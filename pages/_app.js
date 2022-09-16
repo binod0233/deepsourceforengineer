@@ -1,5 +1,6 @@
 import "../styles.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Script from "next/script";
 
 import { useRef, useEffect } from "react";
 import Head from "next/head";
@@ -9,6 +10,7 @@ import Socials from "../components/Socials";
 import TakeMeToTop from "../components/TakeMeToTop";
 import TagManager from "react-gtm-module";
 import { SSRProvider } from "react-bootstrap";
+import Honeybadger from "@honeybadger-io/js";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
@@ -27,6 +29,19 @@ let config = {
 const tagManagerArgs = {
   gtmId: "GTM-KPSZLRR",
 };
+
+Honeybadger.configure({
+  apiKey: process.env.HONEYBADGER_API_KEY,
+  revision: process.env.HONEYBADGER_REVISION,
+  environment: process.env.NODE_ENV,
+  projectRoot: "webpack://_N_E/./",
+
+  // Uncomment to report errors in development:
+  reportData: true,
+});
+if (typeof window !== "undefined") {
+  window.Honeybadger = Honeybadger;
+}
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -80,6 +95,9 @@ function MyApp({ Component, pageProps }) {
     //     Chatra("init", config);
     // Chatra("pageView");
   }, []);
+  const { err } = this.props;
+  const modifiedPageProps = { ...pageProps, err };
+
   return (
     <SSRProvider>
       <div ref={headScroll}></div>
@@ -98,10 +116,19 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KPSZLRR');
+      `}
+      </Script>
 
       <Header scrollToTop={scrollToTop} />
       <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
+        <Component {...modifiedPageProps} />
       </QueryClientProvider>
       <Footer />
     </SSRProvider>

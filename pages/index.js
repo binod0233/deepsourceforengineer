@@ -1,20 +1,13 @@
-import Head from "next/head";
 import OurReports from "../components/Home/OurReports";
 import CDRReport from "../components/Home/CDRReport";
 import EngineersTakeHelp from "../components/Home/EngineersTakeHelp";
 import FrequentlyAsked from "../components/Home/FrequentlyAsked";
 import GetYourCDR from "../components/Home/GetYourCDR";
 import Hero from "../components/Hero";
-import { useRouter } from "next/router";
 import Seo from "../components/Seo";
 import parse from "html-react-parser";
 
 export default function Home({ landingRes }) {
-  const router = useRouter();
-  const canonicalUrl = (
-    `https://www.cdrforengineer.com` +
-    (router.asPath === "/" ? "" : router.asPath)
-  ).split("?")[0];
   const { hero, seo } = landingRes;
 
   return (
@@ -43,7 +36,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      landingRes: landingRes?.data?.attributes || "",
+      landingRes: landingRes?.data?.attributes,
     },
   };
 };
